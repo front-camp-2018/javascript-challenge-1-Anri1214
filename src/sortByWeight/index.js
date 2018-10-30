@@ -8,13 +8,6 @@ export const sortByWeight = arr => {
       return acc = parseInt(acc) + parseInt(val);
     });
 
-    switch (true) {
-      case first > second:
-        return 1;
-      case first < second:
-        return -1;
-      default:
-        return 0;
-    }
+    return first - second;
   });
 };
